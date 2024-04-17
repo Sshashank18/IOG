@@ -201,9 +201,15 @@ export default function Calendar() {
         setTableData('');
         var firstday = new Date(weekFirst.getFullYear(), weekFirst.getMonth(), weekFirst.getDate() + 7); //added full year and month of weekFirst(so that dates are checked with current month and not today's month)
         var lastday = new Date(firstday.getFullYear(), firstday.getMonth(), firstday.getDate() + 6);
-        let month = lastday.toLocaleString('default', { month: 'long' });
         let year = lastday.getFullYear();
-        setMonthName(month);
+        if(lastday > firstday){
+            let month = firstday.toLocaleString('default', { month: 'long' });
+            setMonthName(month);
+        }
+        else{
+            let month = lastday.toLocaleString('default', { month: 'long' });
+            setMonthName(month);
+        }
         setYear(year);
         setWeekFirst(firstday);
         setWeekLast(lastday);
@@ -215,9 +221,15 @@ export default function Calendar() {
         setTableData('');
         var firstday = new Date(weekFirst.getFullYear(), weekFirst.getMonth(), weekFirst.getDate() - 7);
         var lastday = new Date(firstday.getFullYear(), firstday.getMonth(), firstday.getDate() + 6);
-        let month = lastday.toLocaleString('default', { month: 'long' });
         let year = lastday.getFullYear();
-        setMonthName(month);
+        if(lastday > firstday){
+            let month = firstday.toLocaleString('default', { month: 'long' });
+            setMonthName(month);
+        }
+        else{
+            let month = lastday.toLocaleString('default', { month: 'long' });
+            setMonthName(month);
+        }
         setYear(year);
         setWeekFirst(firstday);
         setWeekLast(lastday);
