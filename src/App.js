@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import Dashboard from './components/Dashboard';
+import Home from './components/FrontEndDisplay/Home';
 import Signup from './components/Signup';
 import Navbar from './components/Navbar';
 import ClientDashboard from './components/ClientDashboard';
@@ -17,7 +18,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          {/* <Route exact path="/" element={}></Route> Adding key here to mount with different */}
+          <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/signup" element={<Signup />}></Route>
           <Route exact path="/signin" element={<Signup />}></Route>
           <Route exact path="/dashboard" element={<Dashboard />}></Route>

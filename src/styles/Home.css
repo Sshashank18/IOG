@@ -1,0 +1,51 @@
+.home{
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.blogsCards{
+    height:400px;
+    display: flex;
+    flex-direction: row;
+    overflow-x:scroll;
+}
+
+.services{
+    margin-top:80px;
+}
+
+.servicesCards{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.stamp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:  80px;
+}
+
+.stamp1{
+    width:150px;
+    height: 60px;
+    margin-right:50px;
+}
+
+.videos{
+    margin-top: 80px;
+}
+
+.meet{
+    display: flex;
+    flex-direction: row;
+}
+
+.meet>.content{
+    width: 50%;
+}
+
+.meet>.image{
+    
+}
