@@ -1,38 +1,67 @@
 /* BLOGS */
 
-.mainBox{
-    width:300px;
+.mainBox {
+    width: 300px;
     height: 300px;
-    background-color: aqua;
+    /* background-color: aqua; */
     border-radius: 5%;
     position: relative;
     margin-right: 20px;
+    margin-bottom: 70px;
 }
 
-.textBox{
-    width:270px;
-    height:150px;
-    background-color: blueviolet;
+.textBox {
+    width: 270px;
+    height: 170px;
+    color: white;
+    text-align: left;
+    background: rgba(70, 65, 65, 0.22);
+    box-shadow: 0px 5px 20px rgba(103, 97, 97, 1);
+    backdrop-filter: blur(200px);
     border-radius: 5%;
     position: absolute;
-    top:200px;
-    left:15px;
-    padding:10px;
+    top: 200px;
+    left: 15px;
+    padding: 10px;
 }
 
-.date{
-    color:aliceblue;
+.date {
+    color: aliceblue;
     text-align: left;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.readMore {
+    border-radius: 24px !important;
 }
 
 
 /* SERVICES */
 
-.mainBoxServices{
-    width:300px;
+.mainBoxServices {
+    width: 300px;
     height: 300px;
+    border-radius: 5%;
+    position: relative;
+    margin-right: 20px;
+}
+
+
+.mainBoxVideos {
+    width: 300px;
+    height: 200px;
+    padding: 5px;
     background-color: aqua;
     border-radius: 5%;
     position: relative;
     margin-right: 20px;
+}
+
+.timeBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 12px;
 }
